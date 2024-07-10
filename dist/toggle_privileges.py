@@ -1,7 +1,12 @@
 from havoc import Demon, RegisterCommand
 
 def PrintList():
-	list  = "\n";
+	list  = "Toggle privileges\n";
+	list += "\n";
+	list += "Usage: TogglePrivsBof enable/disable PRIV_NUMBER";
+	list += "\n";
+	list += "Example: TogglePrivsBof enable 20";
+	list += "\n";
 	list += "Please select a number, to provide as an argument.\n\n";
 	list += "1:\tSeCreateTokenPrivilege\n";
 	list += "2:\tSeAssignPrimaryTokenPrivilege\n";
@@ -67,4 +72,4 @@ def TogglePrivs(demonID, *param):
 
     return TaskID
 
-RegisterCommand(TogglePrivs, "", "TogglePrivsBof", "Toggle privileges." + PrintList(), 0, "[ACTION] [PRIV_NUMBER]", "enable/disable 20" )
+RegisterCommand(TogglePrivs, "", "toggle_privs_bof", "Toggle privileges.", 0, "[ACTION] [PRIV_NUMBER]", "enable/disable 20" )

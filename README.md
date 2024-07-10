@@ -41,13 +41,13 @@ make
 - From a given `Beacon`:
     ```sh
     # Getting general help
-    help TogglePrivsBof
+    help toggle_privs_bof
     
     # Adding a privilege (SE_DEBUG)
-    TogglePrivsBof enable 20
+    toggle_privs_bof enable 20
     
     # Removing a privilege (SE_DEBUG)
-    TogglePrivsBof disable 20
+    toggle_privs_bof disable 20
     ```
 
 ##
