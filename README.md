@@ -34,6 +34,22 @@ make
     # Removing a privilege (SE_DEBUG)
     syscall_disable_priv 20
     ```
+
+##### For Havoc (https://havocframework.com/)
+- Load the `.py` from the `Script Manager`
+- Determine whatever relative privilege number (see the help menu) you wish to apply to your current process token
+- From a given `Beacon`:
+    ```sh
+    # Getting general help
+    TogglePrivsBof
+    
+    # Adding a privilege (SE_DEBUG)
+    TogglePrivsBof enable 20
+    
+    # Removing a privilege (SE_DEBUG)
+    TogglePrivsBof disable 20
+    ```
+
 ##
 #### I tend to touch the stove carelessly, how are you taking care of the injury-prone?
 - Currently, the `Aggressor` script has safeguards
