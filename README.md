@@ -43,6 +43,9 @@ make
     # Getting general help
     help toggle_privs_bof
     
+    # Getting the list of privilege IDs
+    toggle_privs_bof
+    
     # Adding a privilege (SE_DEBUG)
     toggle_privs_bof enable 20
     

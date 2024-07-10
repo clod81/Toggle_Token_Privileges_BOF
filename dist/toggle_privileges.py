@@ -1,51 +1,49 @@
 from havoc import Demon, RegisterCommand
 
-def PrintList():
-	list  = "Toggle privileges\n";
-	list += "\n";
-	list += "Usage: TogglePrivsBof enable/disable PRIV_NUMBER";
-	list += "\n";
-	list += "Example: TogglePrivsBof enable 20";
-	list += "\n";
-	list += "Please select a number, to provide as an argument.\n\n";
-	list += "1:\tSeCreateTokenPrivilege\n";
-	list += "2:\tSeAssignPrimaryTokenPrivilege\n";
-	list += "3:\tSeLockMemoryPrivilege\n";
-	list += "4:\tSeIncreaseQuotaPrivilege\n";
-	list += "5:\tSeUnsolicitedInputPrivilege\n";
-	list += "6:\tSeMachineAccountPrivilege\n";
-	list += "7:\tSeTcbPrivilege\n";
-	list += "8:\tSeSecurityPrivilege\n";
-	list += "9:\tSeTakeOwnershipPrivilege\n";
-	list += "10:\tSeLoadDriverPrivilege\n";
-	list += "11:\tSeSystemProfilePrivilege\n";
-	list += "12:\tSeSystemtimePrivilege\n";
-	list += "13:\tSeProfileSingleProcessPrivilege\n";
-	list += "14:\tSeIncreaseBasePriorityPrivilege\n";
-	list += "15:\tSeCreatePagefilePrivilege\n";
-	list += "16:\tSeCreatePermanentPrivilege\n";
-	list += "17:\tSeBackupPrivilege\n";
-	list += "18:\tSeRestorePrivilege\n";
-	list += "19:\tSeShutdownPrivilege\n";
-	list += "20:\tSeDebugPrivilege\n";
-	list += "21:\tSeAuditPrivilege\n";
-	list += "22:\tSeSystemEnvironmentPrivilege\n";
-	list += "23:\tSeChangeNotifyPrivilege\n";
-	list += "24:\tSeRemoteShutdownPrivilege\n";
-	list += "25:\tSeUndockPrivilege\n";
-	list += "26:\tSeSyncAgentPrivilege\n";
-	list += "27:\tSeEnableDelegationPrivilege\n";
-	list += "28:\tSeManageVolumePrivilege\n";
-	list += "29:\tSeImpersonatePrivilege\n";
-	list += "30:\tSeCreateGlobalPrivilege\n";
-	list += "31:\tSeTrustedCredManAccessPrivilege\n";
-	list += "32:\tSeRelabelPrivilege\n";
-	list += "33:\tSeIncreaseWorkingSetPrivilege\n";
-	list += "34:\tSeTimeZonePrivilege\n";
-	list += "35:\tSeCreateSymbolicLinkPrivilege\n";
-	list += "36:\tSeDelegateSessionUserImpersonatePrivilege\n";
-
-	return list;
+def PrintList(demon):
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "Toggle privileges")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "Usage: TogglePrivsBof enable/disable PRIV_NUMBER")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "Example: TogglePrivsBof enable 20")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "Please select a number, to provide as an argument.")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "1:\tSeCreateTokenPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "2:\tSeAssignPrimaryTokenPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "3:\tSeLockMemoryPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "4:\tSeIncreaseQuotaPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "5:\tSeUnsolicitedInputPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "6:\tSeMachineAccountPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "7:\tSeTcbPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "8:\tSeSecurityPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "9:\tSeTakeOwnershipPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "10:\tSeLoadDriverPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "11:\tSeSystemProfilePrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "12:\tSeSystemtimePrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "13:\tSeProfileSingleProcessPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "14:\tSeIncreaseBasePriorityPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "15:\tSeCreatePagefilePrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "16:\tSeCreatePermanentPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "17:\tSeBackupPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "18:\tSeRestorePrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "19:\tSeShutdownPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "20:\tSeDebugPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "21:\tSeAuditPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "22:\tSeSystemEnvironmentPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "23:\tSeChangeNotifyPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "24:\tSeRemoteShutdownPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "25:\tSeUndockPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "26:\tSeSyncAgentPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "27:\tSeEnableDelegationPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "28:\tSeManageVolumePrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "29:\tSeImpersonatePrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "30:\tSeCreateGlobalPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "31:\tSeTrustedCredManAccessPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "32:\tSeRelabelPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "33:\tSeIncreaseWorkingSetPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "34:\tSeTimeZonePrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "35:\tSeCreateSymbolicLinkPrivilege")
+	demon.ConsoleWrite(demon.CONSOLE_ERROR, "36:\tSeDelegateSessionUserImpersonatePrivilege")
 
 def TogglePrivs(demonID, *param):
     TaskID: str = None
@@ -54,7 +52,7 @@ def TogglePrivs(demonID, *param):
     packer : Packer = Packer()
 
     if len(param) < 2:
-        demon.ConsoleWrite(demon.CONSOLE_ERROR, f"Not enough arguments {len(param)}")
+        PrintList(demon)
         return False
 
     if len(param) > 2:
@@ -72,4 +70,4 @@ def TogglePrivs(demonID, *param):
 
     return TaskID
 
-RegisterCommand(TogglePrivs, "", "toggle_privs_bof", "Toggle privileges.", 0, "[ACTION] [PRIV_NUMBER]", "enable/disable 20" )
+RegisterCommand(TogglePrivs, "", "toggle_privs_bof", "Toggle privileges. Launch with no parameters to see the list of PRIV_NUMBER", 0, "[ACTION] [PRIV_NUMBER]", "enable/disable 20" )
