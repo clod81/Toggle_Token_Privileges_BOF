@@ -41,7 +41,7 @@ make
 - From a given `Beacon`:
     ```sh
     # Getting general help
-    TogglePrivsBof
+    help TogglePrivsBof
     
     # Adding a privilege (SE_DEBUG)
     TogglePrivsBof enable 20
